@@ -43,8 +43,27 @@
 .paragraph {
   width: 100%;
 }
+.aa {
+  display: none;
+}
 
-@media (max-width: 752px) {
-  body {
+@media (min-width: 752px) {
+  .button {
+    margin-top: 10px;
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    width: 8rem;
+    height: 2rem;
+    border-radius: 8px;
+    border: 0px;
+    background-color: #ffffff;
+  }
+  .aa {
+    display: flex;
+  }
+  .dd {
+    display: none;
   }
 }
