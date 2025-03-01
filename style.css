@@ -21,7 +21,7 @@
   display: flex;
   flex-direction: column;
   background-color: #9593ff;
-
+  max-width: 58px;
   width: 100%;
   align-items: center;
 }
@@ -43,25 +43,43 @@
 .paragraph {
   width: 100%;
 }
-.aa {
+.menu_item {
   display: none;
 }
 
 @media (min-width: 752px) {
   .button {
     margin-top: 10px;
-    width: 9rem;
+    width: 9.25rem;
     height: 2rem;
     border-radius: 8px;
     border: 0px;
     background-color: #ffffff;
     justify-content: flex-start;
-    width: -webkit-fill-available;
   }
-  .aa {
+  .menu_item {
     display: flex;
   }
   .dd {
     display: none;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #9593ff;
+    min-width: 180px;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #9593ff;
+    min-width: 320px;
+    align-items: center;
+    border-radius: 8px;
   }
 }
